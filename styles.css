@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* display: flex; */
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 20px;
+    text-align: center;
+}
+
+#intro {
+    background-color: #ffe0b2;
+}
+
+#section1 {
+    background-color: #f4f4f4;
+}
+
+#section2 {
+    background-color: #e0f7fa;
+}
+
+#section3 {
+    background-color: #fff9c4;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.image {
+    width: 400px;
+    height: auto;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 애니메이션 스타일 */
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYOU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 인트로 섹션 -->
+    <section id="intro" class="snap-section">
+        <img style="width: 300px; margin-top: -100px;" src="me.png" alt="취미 이미지" class="image">
+        <h1 class="animate-text">Hello!</h1>
+        <p class="animate-text">
+            I’m Jayu Koo, a Computer Science major. Let me introduce myself!
+        </p>
+        <button onclick="scrollToSection('section1')">Next</button>
+    </section>
+
+    <!-- 첫 번째 섹션: 내가 컴퓨터 공학을 선택하게 된 계기 -->
+    <section id="section1" class="snap-section">
+        <h1>Why I chose computer engineering.</h1>
+        <p>
+            I have been interested in computer software since high school.<br/>
+            So, I graduated from a software specialized high school and entered the computer engineering department.<br/>
+            By the way, We don't know how to fix yours computer.<br/>
+            So please don’t ask your Computer Science friends to repair your computers. Haha.
+        </p>
+        <img src="computer-science.jpeg" alt="컴퓨터 공학 이미지" class="image">
+        <button onclick="scrollToSection('section2')">Next</button>
+    </section>
+
+    <!-- 두 번째 섹션: 나의 취미 -->
+    <section id="section2" class="snap-section">
+        <h1>My hobby</h1>
+        <p>
+            One of my hobbies is assembling and repairing computers.<br/>
+            I have assembled and repaired countless computers for people around me. The process of solving software and hardware problems that occur on a computer is fun.
+        </p>
+        <img style="width: 250px;" src="20240615_195507.jpg" alt="취미 이미지" class="image">
+        <button onclick="scrollToSection('section3')">Next</button>
+    </section>
+
+    <!-- 두 번째 섹션: 나의 취미 -->
+    <section id="section3" class="snap-section">
+        <h1>Traveling</h1>
+        <p>
+            Traveling is my favorite hobby.<br/>
+             So far, I’ve been to the USA, Turkey, and Vietnam. I highly recommend Turkey as a travel destination. The natural landscapes are stunning, and the food is especially delicious! Would you like to see some photos from Turkey?
+        </p>
+        <div style="display: flex; justify-content: center;">
+            <img style="width: 250px; margin-right: 25px;" src="KakaoTalk_Photo_2024-09-26-16-19-32.jpeg" alt="취미 이미지" class="image">
+            <img style="width: 250px; margin-right: 25px;" src="20231228_152337.jpg" alt="취미 이미지" class="image">
+            <img style="width: 250px;" src="20231223_173641.jpg" alt="취미 이미지" class="image">
+        </div>
+        <button onclick="scrollToSection('section4')">Next</button>
+    </section>
+
+    <!-- 세 번째 섹션: 요즘 가장 몰두하고 있는 일 -->
+    <section id="section4" class="snap-section">
+        <h1>What I’ve been most focused on recently.</h1>
+        <p>
+            Lately, I’ve been focused on designing and developing a mobile app.<br/>
+            I’m working on a mobile app that helps prevent tardiness, and we’re currently in the process of getting it ready for launch. I hope our app can make a positive impact on the world.
+        </p>
+        <img src="focus.jpeg" alt="몰두하고 있는 일 이미지" class="image">
+        <button onclick="scrollToSection('intro')">Back to beginning</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
