@@ -50,11 +50,11 @@ p {
     font-size: 1em; /* Reduced font size for readability on small screens */
     color: #555;
     margin: 15px 0;
-    max-width: 90%; /* Adjusted to fit better on mobile screens */
+    max-width: 600px; /* Adjusted to fit better on mobile screens */
 }
 
 .image {
-    width: 80%; /* Image size scaled to fit mobile screens */
+    /* width: 80%; Image size scaled to fit mobile screens */
     height: auto;
     margin: 15px 0;
 }
